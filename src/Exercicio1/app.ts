@@ -1,0 +1,38 @@
+import { livro } from "./models/livro";
+
+const Livro1 = new livro("HP", "joao", 1990, true)
+const Livro2 = new livro("pino", "joao", 1900, false)
+
+if (Livro1.emprestar()){
+    console.log(Livro1.titulo + "Emprestadp")
+}
+else{
+    console.log(Livro1.titulo + "Não emprestado")
+}
+
+// Tentando Denovo
+
+if (Livro1.emprestar()){
+    console.log(Livro1.titulo + "Emprestadp")
+}
+else{
+    console.log(Livro1.titulo + "Não emprestado")
+}
+
+// Devolvendo o livro
+
+if (Livro1.devolver()){
+    console.log( Livro1.titulo +"Devolvido")
+}
+
+else {
+    console.log( Livro1.titulo +"Não devolvido")
+}
+
+if (Livro1.emprestar()) {
+    console.log(Livro1.titulo + " Emprestado");
+}
+else {
+    console.log(Livro1.titulo + " Não emprestado");
+}
+
